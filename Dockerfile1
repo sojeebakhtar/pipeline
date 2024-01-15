@@ -1,0 +1,23 @@
+FROM node:13.12.0-alpine AS build
+
+WORKDIR /app
+
+ENV PORT=80
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm install --silent
+
+COPY public/ /app/public
+COPY src/ /app/src
+
+
+RUN npm run build
+
+# Second stage 
+FROM nginx:alpine
+
+# Copy build files to Nginx
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE $PORT
+CMD ["nginx", "-g", "daemon off;"]
