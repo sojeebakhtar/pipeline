@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Set the branch you want to trigger the workflow for
+      - master  # Set the branch you want to trigger the workflow for
 
 jobs:
   build-and-push:
@@ -31,6 +31,6 @@ jobs:
           -t $DOCKER_USERNAME/small2:$GITHUB_SHA \
           -f Dockerfile1 .
         
-        docker push $DOCKER_USERNAME/pipeline:latest
-        docker push $DOCKER_USERNAME/pipeline:$GITHUB_SHA
+        docker push $DOCKER_USERNAME/small2:latest
+        docker push $DOCKER_USERNAME/small2:$GITHUB_SHA
 
