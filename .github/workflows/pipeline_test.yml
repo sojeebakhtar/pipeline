@@ -29,7 +29,7 @@ jobs:
           --platform linux/amd64,linux/arm64 \
           -t $DOCKER_USERNAME/small2:latest \
           -t $DOCKER_USERNAME/small2:$GITHUB_SHA \
-          -f Dockerfile .
+          -f Dockerfile1 .
         
         docker push $DOCKER_USERNAME/small2:latest
         docker push $DOCKER_USERNAME/small2:$GITHUB_SHA
