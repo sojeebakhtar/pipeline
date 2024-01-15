@@ -22,7 +22,7 @@ jobs:
           tags: ghcr.io/sojeebakhtar/pipeline:latest
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git remote set-url origin https://git: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@github.com/pipeline.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
