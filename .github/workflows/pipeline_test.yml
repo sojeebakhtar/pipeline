@@ -1,35 +1,26 @@
-name: Build and Push Docker Image
+name: Publish Docker Image to Docker Hub
 
 on:
   push:
     branches:
-      - master  # Set the branch you want to trigger the workflow for
+      - 'master'
 
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build and Push Docker Image
-      env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      run: |
-        echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-        docker buildx create --use
-        docker buildx inspect
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile1 --tag ${{ secrets.DOCKER_USERNAME }}/pipeline:latest
 
-        docker buildx build \
-          --platform linux/amd64,linux/arm64 \
-          -t $DOCKER_USERNAME/small2:latest \
-          -t $DOCKER_USERNAME/small2:$GITHUB_SHA \
-          -f Dockerfile1 .
-        
-        docker push $DOCKER_USERNAME/small2:latest
-        docker push $DOCKER_USERNAME/small2:$GITHUB_SHA
+      - name: Docker Push
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/pipeline:latest
