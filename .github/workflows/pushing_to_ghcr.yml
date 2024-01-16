@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile1 --tag ghcr.io/${{ GITHUB_TOKEN }}/pipeline:latest
+        run: docker build . --file Dockerfile1 --tag ghcr.io/${{ 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 }}/pipeline:latest
 
       - name: Docker Push to GHCR
-        run: docker push ghcr.io/${{ GITHUB_TOKEN }}/pipeline:latest
+        run: docker push ghcr.io/${{ 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 }}/pipeline:latest
 
 
 
