@@ -28,13 +28,6 @@ jobs:
       - name: Build Docker image
         run: docker build . --file Dockerfile1 --tag ghcr.io/${{ github.actor }}/pipeline:pipeline_image
 
-      - name: Log in to the Container registry again
-        uses: docker/login-action@v2
-        with:
-          registry: https://ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-        
       - name: Push Docker image
         run: docker push ghcr.io/${{ github.actor }}/pipeline:pipeline_image
 
