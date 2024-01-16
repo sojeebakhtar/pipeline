@@ -3,7 +3,7 @@ name: Build and Push to GHCR
 on:
   push:
     branches:
-      - 'master'  # Adjust the branch as needed
+      - 'main'  # Adjust the branch as needed
 
 jobs:
   build-and-push-ghcr:
@@ -17,7 +17,7 @@ jobs:
         run: gh auth login --with-token <<<"${{ secrets.GITHUB_TOKEN }}"
 
       - name: Build Docker image
-        run: docker build . --file Dockerfile1 --tag ghcr.io/sojeebakhtar/pipeline:latest
+        run: docker build . --file Dockerfile1 --tag ghcr.io/${{ github.actor }}/pipeline:latest
 
       - name: Push Docker image to GHCR
-        run: docker push ghcr.io/sojeebakhtar/pipeline:latest
+        run: docker push ghcr.io/${{ github.actor }}/pipeline:latest
