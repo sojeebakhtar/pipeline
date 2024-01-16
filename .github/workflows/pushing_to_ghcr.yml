@@ -28,6 +28,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build . --file Dockerfile1 --tag ghcr.io/${{ github.actor }}/pipeline:pipeline_image
-
-      - name: Push Docker image to GHCR
-        run: docker push ghcr.io/${{ github.actor }}/pipeline:pipeline_image
