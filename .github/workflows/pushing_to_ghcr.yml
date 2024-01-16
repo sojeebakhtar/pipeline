@@ -3,7 +3,7 @@ name: Login to GHCR
 on:
   push:
     branches:
-      - 'main'  # Adjust the branch as needed
+      - 'master'  # Adjust the branch as needed
 
 jobs:
   login-to-ghcr:
