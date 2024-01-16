@@ -9,12 +9,12 @@ jobs:
   build-and-push-ghcr:
     runs-on: ubuntu-latest
     permissions:
-      packages:
-        read: true
-        write: true
-
+      packages: write
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
       - name: Check out code
         uses: actions/checkout@v2
 
@@ -28,3 +28,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build . --file Dockerfile1 --tag ghcr.io/${{ github.actor }}/pipeline:pipeline_image
+
+      - name: Push Docker image to GHCR
+        run: docker push ghcr.io/${{ github.actor }}/pipeline:pipeline_image
