@@ -8,8 +8,8 @@ on:
 jobs:
   build-and-push-ghcr:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
+      permissions:
+        packages: write
 
     steps:
       - name: Check out code
