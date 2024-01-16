@@ -1,4 +1,4 @@
-name: Login to GHCR
+name: Build and Push to GHCR
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - 'master'  # Adjust the branch as needed
 
 jobs:
-  login-to-ghcr:
+  build-and-push-ghcr:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,3 +15,9 @@ jobs:
 
       - name: Log in to GitHub Container Registry
         run: gh auth login --with-token <<<"${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Build Docker image
+        run: docker build . --file Dockerfile1 --tag ghcr.io/sojeebakhtar/pipeline:latest
+
+      - name: Push Docker image to GHCR
+        run: docker push ghcr.io/sojeebakhtar/pipeline:latest
