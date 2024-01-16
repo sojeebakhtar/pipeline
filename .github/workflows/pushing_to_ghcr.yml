@@ -1,23 +1,17 @@
-name: Publish Docker Image to GHCR
+name: Login to GHCR
 
 on:
   push:
     branches:
-      - 'master'
+      - 'main'  # Adjust the branch as needed
 
 jobs:
-  build-and-push-ghcr:
+  login-to-ghcr:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile1 --tag ghcr.io/${{ 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 }}/pipeline:latest
-
-      - name: Docker Push to GHCR
-        run: docker push ghcr.io/${{ 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 }}/pipeline:latest
-
-
-
+      - name: Log in to GitHub Container Registry
+        run: gh auth login --with-token <<<"${{ secrets.GITHUB_TOKEN }}"
