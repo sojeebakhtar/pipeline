@@ -1,0 +1,1079 @@
+{
+  "AccessTokenExpireTimeSpanInMinute": 7,
+  "RefreshTokenExpireTimeSpanInMinute": 30,
+  "TokenIssuer": "CN=Enterprise Cloud Application Platform",
+  "MongoDbConnectionString": "mongodb://10.30.65.4:27017/",
+  "RabbitMqConnectionString": "amqp://test:test@10.30.65.4:5672/",
+  "AuditLogServerInstanceConnectionString": "mongodb://10.30.65.4:27017",
+  "TenantRegistrationDatabaseConnectionString": "mongodb://10.30.65.4:27017",
+  "KeyStorageConnectionString": "10.30.65.4:6379,abortConnect=false,connectTimeout=50000,syncTimeout=50000",
+  "ServiceHostSettings": [
+    {
+      "ConsoleHost": "10.5.25.117:7012",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "TenantManager"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7012",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "Security"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7015",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "AppCatalogue"
+    },
+    {
+      "ConsoleHost": "pdsmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "AppSuiteDataCore"
+    },
+    {
+      "ConsoleHost": "mailmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "MailService"
+    },
+    {
+      "ConsoleHost": "storagemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "StorageService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7017",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ConversionService"
+    },
+    {
+      "ConsoleHost": "smsmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ShortMessageService"
+    },
+    {
+      "ConsoleHost": "messagingmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "MessagingService"
+    },
+    {
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ShortMessageWindowsService"
+    },
+    {
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "MailServiceWindowsService"
+    },
+    {
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "MessagingWinService"
+    },
+    {
+      "ConsoleHost": "Annotationmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "AudioAnnotationService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7020/v1",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ProvenTx"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7021",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "DictionaryService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7022",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SequenceNumberService"
+    },
+    {
+      "ConsoleHost": "aggregatemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "Service-Aggregator"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7024",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "FormsService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7025",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SystemIntegration"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7026/v2",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SaaService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7027",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SlpcDocumentUploader"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:2028/v16",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "TemplateEngineService"
+    },
+    {
+      "ConsoleHost": "172.16.0.117",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "TemplateEngineServiceHost"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7027",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "WorkflowService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7030",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "URLShortenerService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7031",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "PdsChangeObserverService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7032",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ChatService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7033",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SbBusinessService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7034",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "AuditLogService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7035",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "Captcha"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7036",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SoapIntegration.WebService"
+    },
+    {
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SoapIntegration.ExecutorHost"
+    },
+    {
+      "ConsoleHost": "stsmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "StsService"
+    },
+    {
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "FileCompressorService"
+    },
+    {
+      "ConsoleHost": "jamahookbusinessservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "jhbs"
+    },
+    {
+      "ConsoleHost": "slpwcBusinessService.test-swisslife.com",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SlpwcBusinessService"
+    },
+    {
+      "ConsoleHost": "socialnetworkservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SocialNetworkService"
+    },
+    {
+      "ConsoleHost": "socialnetworkservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SocialNetworkServiceHost"
+    },
+    {
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "MailCollaborationWindowsService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:2096",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "eSignatureService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7066",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "FinoIntegration"
+    },
+    {
+      "ConsoleHost": "securestoragemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "SecureStorageWebService"
+    },
+    {
+      "ServiceName": "DataSyncApi",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "datasyncmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "DataSyncService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "SingleSignOn",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "ssomicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "SeliSign",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "selisignmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "Identity",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "identitymicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "UserAccessManagement",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "uammicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "AppSuiteDataCoreHost",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "windows.service:no.port"
+    },
+    {
+      "ServiceName": "Geolocation",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "geolocationmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "2FactorAuthentication",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "2famicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "SelectNetworkBusinessService",
+      "ServiceType": "WinService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SelectNetworkWinService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "DEBUG"
+    },
+    {
+      "ServiceName": "SelectNetworkJobSchedulerService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "DEBUG"
+    },
+    {
+      "ServiceName": "SelectNetworkCommandHandlerService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "DEBUG"
+    },
+    {
+      "ServiceName": "SelectNetworkSyncService",
+      "ServiceType": "WinService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7066",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "KvvIntegration"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7066",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "CzIntegration"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7066",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "FcCzIntegration"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7066",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "FcSkIntegration"
+    },
+    {
+      "ServiceName": "JamahookApi",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "JamahookApimicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "LanguageManager",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "uilmmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "Selise.SC.GermanRailway.SyncAdapter",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "SyncAdapter",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "FinApiService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "FinApimicroservices.fakedomain.com/api/"
+    },
+    {
+      "ServiceName": "FinApiWinService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "FinApimicroservices.fakedomain.com/api/"
+    },
+    {
+      "ServiceName": "SC.SyncAdapters.Business.Trackord",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "SyncAdapters",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "SC.SyncAdapters.Business.Scert",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "SyncAdapters",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "PraxisMonitorWebService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "PraxisMonitor",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "PraxisMonitorSyncWinService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "PraxisMonitorSyncWinService",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "PraxisMonitorHostService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "PraxisMonitor",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ItsmService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "10.5.25.117:7012",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "MaintenanceToolSlsn",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "CampaignServiceApi",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "CampaignServiceApi.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "CampaignServiceApiWin",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "CampaignServiceApi.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ArcBusinessService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "arcservice.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ArcOrganizationService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "arcservice.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ArcOrganizationConsoleService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "arcservice.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ArcBusinessServiceWin",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "arcservice.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ArcBusinessEmailScanner",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "arcservice.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "OrganizationSignupService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "organization.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "CampaignLeadService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "CampLead.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ConsentHook",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "ConsentHook.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "ConsentHookWin",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "ConsentHook.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "CampaignAnalyticsWin",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "ConsentHook.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "CampaignAnalytics",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "CampaignAnalytics.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "CalendarSyncHost",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "DEBUG"
+    },
+    {
+      "ServiceName": "CalendarSyncJobHost",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "DEBUG"
+    },
+    {
+      "ServiceName": "ServiceAccessCode",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "TaskManagementService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "TaskManagementmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "MalwareScannerService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "malwarescannerservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "MalwareScannerHost",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "malwarescannerservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "JudgeService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "judgeservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "JudgeHost",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "judgeservicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "IDMService",
+      "ServiceType": "IDMService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "IDMService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "IDMWindowsService",
+      "ServiceType": "IDMWindowsService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "IDMWindowsService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "IDMJobService",
+      "ServiceType": "IDMJobService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "IDMJobService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "WorkManagementService",
+      "ServiceType": "WorkManagementService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "WorkManagementService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "WorkManagementHostService",
+      "ServiceType": "WorkManagementHostService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "WorkManagementHostService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "OntrexService",
+      "ServiceType": "OntrexService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "OntrexService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "OntrexWindowsService",
+      "ServiceType": "OntrexWindowsService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "OntrexWindowsService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "OntrexJobService",
+      "ServiceType": "OntrexJobService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "OntrexJobService.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "SelectNetworkDataAggregationService",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "SelectNetworkDataAggregationServicemicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "AutogrillCMS_WebHost",
+      "ServiceType": "MicroService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "autogrill-cms-bsmicroservices.fakedomain.com/api/",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "McgService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "stg-mcg-business-service.selise.biz",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "McgWinService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "McgWinService",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "TokenExchangeService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "TokenExchangeService",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "PdfGeneratorHost",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "PdfGeneratorHostService",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "SelectNetworkQueryService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SelectNetworkEventHandlingService",
+      "ServiceType": "WinService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SchedulerWinService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SKOWebService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SKO_WebHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "Campaign",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "CampaignHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "GraphQl_WriterWebService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "PDS_WebService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "OfficeDocumentWebService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "OfficeDocumentWinService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "IIHFService",
+      "ServiceLogLevel": "Debug",
+      "ConsoleHost": "IIHFService",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "BergerBusinessService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "BergerWindowsService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "MigrationService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "MigrationServiceWin",
+      "ServiceName": "MigrationServiceWin"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ArcEtlWebService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "ArcEtlConsoleService",
+      "ServiceName": "ArcEtlConsoleService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "ArcLeadWebService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "LeadConsoleService",
+      "ServiceName": "LeadConsoleService"
+    },
+    {
+      "ServiceName": "Arc-Support-Web",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SeliSignWindowsService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "SeliSignWindowsService",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7015",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "PraxisCommandHandlerService"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7032",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "PraxisJobSchedulerService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "GiraffeService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "GiraffeBackgroundService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "LeadersWebService"
+    },
+    {
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "Leaders_WebHost"
+    },
+    {
+      "ConsoleHost": "10.5.25.117:7012",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "TrackordSyncWinService"
+    },
+    {
+      "ConsoleHost": "RealEstateWebService",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "RealEstateWebService"
+    },
+    {
+      "ConsoleHost": "RealEstateWinService",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "RealEstateWinService"
+    },
+    {
+      "ServiceName": "AmbergRmsWebHost",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "AmbergRmsWebHost",
+      "ErrorVerbosity": "StackTrace"
+    },
+    {
+      "ServiceName": "PCXWebService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "PCXWebHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "misterloo-webservice",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "misterloo-webhost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "EmailSyncService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "EmailSyncWebHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "AttendoWebHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "AttendoWebService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SlepwParserWindowsService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "windows.service:no.port",
+      "ErrorVerbosity": "None"
+    },
+    {
+      "ServiceName": "CoscompWebHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "CoscompWebService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "SVGWebService",
+      "ServiceLogLevel": "INFO",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WebService"
+    },
+    {
+      "ServiceName": "SVGHostService",
+      "ServiceLogLevel": "INFO",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WindowsService"
+    },
+    {
+      "ServiceName": "MoveItWebService",
+      "ServiceLogLevel": "INFO",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WebService"
+    },
+    {
+      "ServiceName": "MoveItHostService",
+      "ServiceLogLevel": "INFO",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WindowsService"
+    },
+    {
+      "ServiceName": "MagnethubBusinessService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "MagnethubBusinessWinService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "BlocksConfiguration",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "BlocksConfigurationWin",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "NotifierServer",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "CoscompSchedulerWebHost",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "FinSYWebService",
+      "ServiceLogLevel": "INFO",
+      "ConsoleHost": "finsy.seliselocal.com",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WebService"
+    },
+    {
+      "ServiceName": "FinSYWinService",
+      "ServiceLogLevel": "INFO",
+      "ErrorVerbosity": "StackTrace",
+      "ConsoleHost": "windows.service:no.port",
+      "ServiceType": "WindowsService"
+    },
+    {
+      "ServiceName": "DeltaService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "DeltaWindowsService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "EnterpriseCrmService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "EnterpriseCrmWindowsService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "EwopharmaService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "EwopharmaWindowsService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "RmWebHostService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "RmApiService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "MagnethubBctsBusinessService",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "MagnethubBctsBusinessWinService",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ConsoleHost": "CalendarSyncWebService",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceLogLevel": "INFO",
+      "ServiceName": "CalendarSyncWebService"
+    },
+    {
+      "ServiceName": "PLPosBackOfficeService",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WebService",
+      "ServiceLogLevel": "INFO"
+    },
+    {
+      "ServiceName": "PLPosBackOfficeWinService",
+      "ErrorVerbosity": "StackTrace",
+      "ServiceType": "WindowsService",
+      "ServiceLogLevel": "INFO"
+    }
+  ],
+  "Scheme": "http",
+  "SequenceNumberServiceBaseUrl": "http://msblocks.seliselocal.com/api/sequence",
+  "SeqAddress": "http://msblocks.seliselocal.com/api/log-netcore",
+  "StorageServiceBaseUrl": "http://msblocks.seliselocal.com/api/storageservice",
+  "PlatfromDataServiceBaseUrl": "http://msblocks.seliselocal.com/api/pds",
+  "MailServiceBaseUrl": "http://msblocks.seliselocal.com/api/mailservice",
+  "SecurityServiceBaseUrl": "http://msblocks.seliselocal.com/api/security",
+  "ShortMessageServiceBaseUrl": "http://msblocks.seliselocal.com/api/sms",
+  "NotifierServerBaseUrl": "http://msblocks.seliselocal.com/api/notification",
+   "StsEndPointUri": "http://msblocks.seliselocal.com/api/sts",
+  "Sts2EndPointUri": "http://msblocks.seliselocal.com/api/sts2",
+  "TemplateEngineServiceBaseUrl": "http://msblocks.seliselocal.com/api/templateengine",
+  "URLShortenerServiceBaseUri": "http://msblocks.seliselocal.com/api/urlshortener",
+  "SecureFileUriDomain": "http://msblocks.seliselocal.com/api/securestorage",
+  "PdfGeneratorBaseUrl": "http://msblocks.seliselocal.com/api/pdfgenerator",
+  "CaptchaServiceBaseUri": "http://msblocks.seliselocal.com/api/captcha/Captcha",
+  "GraphQLCommandServiceBaseUrl": "http://msblocks.seliselocal.com/api/graphqlcommand",
+  "GraphQLQueryServiceBaseUrl": "http://msblocks.seliselocal.com/api/graphqlquery",
+  "BlocksAuditLogQueueName": "EcapAuditLogQueue",
+  "BlocksMailServiceQueueName": "EcapMailServiceQueue",
+  "BlocksEmailDispatchQueueName": "Mail_Dispatch_Queue",
+  "BlocksDataChangeOvserverQueueName": "PlatformDataServiceQueue",
+  "BlocksFileCompressorQueueName": "EcapFileCompressorQueue",
+  "BlocksFileConversionQueueName": "EcapFileConversionQueue",
+  "BlocksShortMessageServiceQueueName": "EcapShortMessageServiceQueue",
+  "BlocksSoapFunctionExecutorWorkerQueueName": "EcapSoapFunctionExecutorWorkerQueue",
+  "BlocksDataSyncServiceQueueName": "EcapDataSyncServiceQueue",
+  "EcapAuditLogQueueName": "EcapAuditLogQueue",
+  "EcapMailServiceQueueName": "EcapMailServiceQueue",
+  "EcapEmailDispatchQueueName": "Mail_Dispatch_Queue",
+  "EcapDataChangeOvserverQueueName": "PlatformDataServiceQueue",
+  "EcapFileCompressorQueueName": "EcapFileCompressorQueue",
+  "EcapFileConversionQueueName": "EcapFileConversionQueue",
+  "EcapShortMessageServiceQueueName": "EcapShortMessageServiceQueue_Test",
+  "EcapSoapFunctionExecutorWorkerQueueName": "EcapSoapFunctionExecutorWorkerQueue",
+  "EcapDataSyncServiceQueueName": "EcapDataSyncServiceQueue",
+  "DeviceTokenExpireInMinutes": 30,
+  "SessionLockExpireInMinutes": 30,
+  "JwtTokenVerificationPublicCertificatePassword": "Selise@5033",
+  "ServiceLogFileRootPath": "C:\\Log\\",
+  "StorageBasePath": "/smbshare",
+  "JwtTokenVerificationPublicCertificatePath": "C:/Certificates/Public.pfx",
+  "IdentityServiceBaseUri": "http://msblocks.seliselocal.com/api/identity",
+  "GeoLocationServiceBaseUri": "http://msblocks.seliselocal.com/api/geolocation",
+  "UserAccessManagementServiceBaseUri": "http://msblocks.seliselocal.com/api/uam",
+  "TwoFactorAuthenticationServiceBaseUri": "http://msblocks.seliselocal.com/api/2fa",
+  "SecurityAssemblyRootDirectory": "C:\\ECAP_CONFIGS",
+  "GeoLocationDatabaseConnectionString": "mongodb://10.30.65.4:27017",
+  "AllowCorsForRegisteredSites": true,
+  "StsCreateForUserAsync": "StsService/AccessToken/CreateForUserAsync?sk=",
+  "StsCreateFromAccessTokenAsync": "StsService/AccessToken/CreateFromAccessTokenAsync?sk=",
+  "StsCreateFromClaims": "StsService/AccessToken/CreateFromClaims?sk=",
+  "StsVersion": "api/sts2",
+  "StsSecret": "59b24086167d9968a87d11f211933152",
+  "AesEncryptionKey": "b14ca5898a4e4133bbce2ea2315a1916",
+  "TokenHijackingProtectionSalt": "EcAp-Sa1tEd-#-Blscut"
+}
